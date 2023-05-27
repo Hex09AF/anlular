@@ -18,4 +18,14 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should update the value of the input field', () => {
+    const input = fixture.nativeElement.querySelector('input');
+    const event = new Event('input');
+
+    input.value = 'username';
+    input.dispatchEvent(event);
+
+    expect(fixture.componentInstance.username.value).toEqual('username');
+  });
 });
