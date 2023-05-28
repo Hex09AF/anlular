@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { EMPTY, of } from 'rxjs';
 import { exhaustMap, map, tap } from 'rxjs/operators';
-import { login, loginSuccess } from './login.action';
+import { login, loginSuccess } from './login.actions';
 
 @Injectable()
 export class LoginEffects {

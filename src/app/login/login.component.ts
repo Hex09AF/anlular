@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { login } from '../features/login/login.action';
+import { login } from '../features/login/login.actions';
 
 @Component({
   selector: 'app-login',

@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { login } from './login.action';
+import { login } from './login.actions';
 
 export const initialState = 0;
 
