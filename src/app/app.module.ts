@@ -13,13 +13,7 @@ import { OutComponent } from './out/out.component';
 import { HeadComponent } from './head/head.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    InComponent,
-    OutComponent,
-    HeadComponent,
-  ],
+  declarations: [AppComponent, HomeComponent, InComponent, HeadComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

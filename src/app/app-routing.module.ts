@@ -8,18 +8,22 @@ import { OutComponent } from './out/out.component';
 const routes: Routes = [
   {
     path: 'login',
+    title: 'Login',
     component: LoginComponent,
   },
   {
     path: 'home',
+    title: 'Home',
     component: HomeComponent,
   },
   {
     path: 'in',
+    title: 'Income',
     component: InComponent,
   },
   {
     path: 'out',
+    title: 'Outcome',
     component: OutComponent,
   },
 ];
