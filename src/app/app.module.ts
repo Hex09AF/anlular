@@ -8,10 +8,9 @@ import { AppComponent } from './app.component';
 import { LoginEffects } from './features/login/login.effects';
 import { loginReducer } from './features/login/login.reducer';
 import { HeadComponent } from './head/head.component';
-import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeadComponent],
+  declarations: [AppComponent, HeadComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
