@@ -7,9 +7,19 @@ import { StoreModule } from '@ngrx/store';
 import { loginReducer } from './features/login/login.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { LoginEffects } from './features/login/login.effects';
+import { HomeComponent } from './home/home.component';
+import { InComponent } from './in/in.component';
+import { OutComponent } from './out/out.component';
+import { HeadComponent } from './head/head.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    InComponent,
+    OutComponent,
+    HeadComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

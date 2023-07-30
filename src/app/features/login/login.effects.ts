@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { EMPTY, of } from 'rxjs';
 import { exhaustMap, map, tap } from 'rxjs/operators';
@@ -13,6 +14,7 @@ export class LoginEffects {
         of(EMPTY).pipe(
           tap(() => {
             console.log(action);
+            this.router.navigate(['home']);
           }),
           map(loginSuccess)
         )
@@ -20,5 +22,8 @@ export class LoginEffects {
     );
   });
 
-  constructor(private actions$: Actions) {}
+  constructor(
+    private actions$: Actions,
+    private router: Router
+  ) {}
 }
